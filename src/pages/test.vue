@@ -1,10 +1,10 @@
 <template>
-    <div>{{obj.count}}</div>
-    <div>{{newVal}}</div>
+    <JsxCmpt></JsxCmpt>
 </template>
 
 <script setup>
 import {ref, reactive,computed,watchEffect } from 'vue';
+import JsxCmpt from './jsx.jsx'
 let small = ref(0)
 let obj = reactive({
     count:111
