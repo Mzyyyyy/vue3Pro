@@ -2,7 +2,7 @@
     <JsxCmpt></JsxCmpt>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {ref, reactive,computed,watchEffect } from 'vue';
 import JsxCmpt from './jsx.jsx'
 let small = ref(0)
@@ -19,4 +19,11 @@ watchEffect(()=>{
     console.log(obj.count,898989)
 })
 obj.count = 444
+// import { defineComponent } from "vue";
+// export default defineComponent({
+//     setup(){
+
+//     }
+// })
+
 </script>
